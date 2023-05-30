@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/sweetalert2.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap-icons.css') }}">
-    <link href="https://cdn.datatables.net/v/dt/dt-1.13.4/datatables.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ asset('assets/css/datatables.min.css') }}">
+    {{-- <link href="https://cdn.datatables.net/v/dt/dt-1.13.4/datatables.min.css" rel="stylesheet" />
 
-    <script src="https://cdn.datatables.net/v/dt/dt-1.13.4/datatables.min.js"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-1.13.4/datatables.min.js"></script> --}}
 </head>
 
 <body>
@@ -148,10 +149,11 @@
         <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
         <script src="{{ asset('assets/js/jquery-3.6.3.min.js') }}"></script>
         <script src="{{ asset('assets/js/popper.min.js') }}"></script>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="{{ asset('assets/js/sweetalert2.min.js') }}"></script>
+        <script src="{{ asset('assets/js/datatables.min.js') }}"></script>
+        {{-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> --}}
         <script>
             $(function() {
-
                 // add new employee ajax request
                 $("#add_employee_form").submit(function(e) {
                     e.preventDefault();
